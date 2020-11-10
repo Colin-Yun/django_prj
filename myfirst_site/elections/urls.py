@@ -4,6 +4,8 @@ from . import views
 # from django.conf.urls import include
 
 urlpatterns = [
-    #path('', views.index)
-    path('', views.test)
+    path('', views.index),
+    #path('', views.test)
+    path('<int:question_id>/', views.detail),
 ]
+
